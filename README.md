@@ -15,20 +15,6 @@ Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Add to `.zshrc`
-
-```bash
-## Brew Configuring Completions in zsh
-
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
-  autoload -Uz compinit
-  compinit
-fi
-
-```
 Cask install default app
 ```bash
 brew install --cask \
@@ -77,4 +63,39 @@ brew install \
   node \
   awscli \
   doctl
+```
+
+Yandex CLI
+```bash
+curl https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
+```
+
+Add to `.zshrc`
+
+```bash
+## START Brew Configuring Completions in zsh
+
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
+## END Brew Configuring Completions in zsh
+
+
+## START Completions Yandex Cloud CLI
+
+# The next line updates PATH for Yandex.Cloud CLI.
+if [ -f '/Users/pilprod/yandex-cloud/path.bash.inc' ]; then source '/Users/pilprod/yandex-cloud/path.bash.inc'; fi
+# The next line enables shell command completion for yc.
+if [ -f '/Users/pilprod/yandex-cloud/completion.zsh.inc' ]; then source '/Users/pilprod/yandex-cloud/completion.zsh.inc'; fi
+
+if [ -f $(brew --prefix)/etc/zsh_completion ]; then
+. $(brew --prefix)/etc/zsh_completion
+fi
+
+## END Completions Yandex Cloud CLI
 ```
