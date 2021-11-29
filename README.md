@@ -106,3 +106,9 @@ fi
 
 ## END Completions Yandex Cloud CLI
 ```
+
+Add  plugin in  `.zshrc`
+
+```bash
+plugins=(git adb ansible aws brew docker-compose docker doctl gcloud golang helm kubectl nmap node npm pip postgres python rails ruby yarn)
+```
