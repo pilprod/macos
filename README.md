@@ -18,6 +18,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 Add to `.zshrc`
 
 ```bash
+## Configuring Completions in zsh
+
 if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
@@ -26,7 +28,13 @@ then
   compinit
 fi
 ```
-
+Cask install all-in-one application 
 ```bash
-brew install --cask google-chrome telegram slack spotify
+brew install --cask google-chrome \
+  telegram \
+  whatsapp \
+  zoom \
+  spotify \
+  docker \
+  visual-studio-code \
 ```
