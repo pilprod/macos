@@ -67,6 +67,7 @@ My DevOps packages and dependencies
 brew install \
   wget \
   git \
+  zsh-completion \
   nmap \
   bat \
   ansible \
