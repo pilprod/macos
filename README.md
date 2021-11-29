@@ -18,7 +18,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 Add to `.zshrc`
 
 ```bash
-## Configuring Completions in zsh
+## Brew Configuring Completions in zsh
 
 if type brew &>/dev/null
 then
@@ -35,6 +35,7 @@ brew install --cask \
   google-chrome \
   telegram \
   whatsapp \
+  slack \
   zoom \
   spotify \
   qbittorrent \
@@ -56,7 +57,8 @@ brew install --cask \
 Cask install other app
 ```bash
 brew install --cask \
-  obs
+  figma \
+  android-file-transfer
 ```
 
 My DevOps packages and dependencies
@@ -71,5 +73,7 @@ brew install \
   helm \
   terraform \
   golang \
-  awscli 
+  node \
+  awscli \
+  doctl
 ```
