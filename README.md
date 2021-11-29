@@ -28,18 +28,6 @@ brew install --cask \
   tor-browser
 ```
 
-Cask install dev app
-```bash
-brew install --cask \
-  docker \
-  visual-studio-code \
-  postman \
-  pgadmin4 \
-  yandex-cloud-cli \
-  google-cloud-sdk \
-  microsoft-remote-desktop
-```
-
 Cask install other app
 ```bash
 brew install --cask \
@@ -63,6 +51,18 @@ brew install \
   node \
   awscli \
   doctl
+```
+
+Cask install dev app
+```bash
+brew install --cask \
+  docker \
+  visual-studio-code \
+  postman \
+  pgadmin4 \
+  yandex-cloud-cli \
+  google-cloud-sdk \
+  microsoft-remote-desktop
 ```
 
 Yandex CLI
