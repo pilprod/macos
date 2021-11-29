@@ -35,6 +35,12 @@ brew install --cask \
   android-file-transfer
 ```
 
+Install other app
+```bash
+brew install \
+  android-file-transfer
+```
+
 My DevOps packages and dependencies
 
 ```bash
