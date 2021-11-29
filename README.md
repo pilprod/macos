@@ -49,6 +49,7 @@ brew install \
   terraform \
   golang \
   node \
+  android-platform-tools \
   awscli \
   doctl
 ```
