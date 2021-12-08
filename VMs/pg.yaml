@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  postgres14:
+    container_name: postgres14
+    image: postgres:14
+    tty: true
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: QJtq9x03BrrcUCzp
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - PGDATA:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  PGDATA:

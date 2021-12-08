@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  ubuntu20:
+    container_name: ubuntu20
+    image: ubuntu:20.04
+    tty: true
+    volumes:
+      - /Users/Shared:/mnt/

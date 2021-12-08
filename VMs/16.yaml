@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  ubuntu16:
+    container_name: ubuntu16
+    image: ubuntu:16.04
+    tty: true
+    volumes:
+      - /Users/Shared:/mnt/

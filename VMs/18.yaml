@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  ubuntu18:
+    container_name: ubuntu18
+    image: ubuntu:18.04
+    tty: true
+    volumes:
+      - /Users/Shared:/mnt/
+    ports:
+      - "8000:8000"
