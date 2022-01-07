@@ -1,0 +1,7 @@
+# Flant Checklist
+.werf_secret_key
+.dapp_secret_key
+
+# My
+.DS_Store
+.werf_secret.yaml
